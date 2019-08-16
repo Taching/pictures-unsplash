@@ -1,24 +1,27 @@
-https://romantic-fermat-62deeb.netlify.com
+# PICTURES-UNSPLASH
+Using UNSPLASH API TO pull data and render it to webpage
 
-## Available Scripts
-
-In the project directory, you can run:
+# To start pulling images from unsplash
+in Image Search, ex. Cars
 
 ### `npm start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Deployment
 
-### `npm test`
+Deployed with Netlify
 
-Launches the test runner in the interactive watch mode.<br>
-### `npm run build`
+https://romantic-fermat-62deeb.netlify.com
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Built With
 
+### CLIENT
+* [REACT](https://reactjs.org/) - The web framework used
+* [STYLED-COMPONENT](https://www.styled-components.com/) - for css Styling
 
-API USED : https://unsplash.com/
+### API USED
+
+* [UNSPLASH](https://unsplash.com/) - Unsplash API
+
