@@ -2,6 +2,12 @@ import React from "react";
 import unsplash from "../API/unsplash";
 import SearchBar from "./SearchBar";
 import ImageList from "./ImageList";
+import HeroBackground from "./HeroBackground";
+import styled from "styled-components";
+const AppStyle = styled.div`
+  position: relative;
+  height: 100vh;
+`;
 class App extends React.Component {
   state = { images: [] };
   onSearchSubmit = async term => {
@@ -10,13 +16,13 @@ class App extends React.Component {
     });
     this.setState({ images: response.data.results });
   };
-
   render() {
     return (
-      <div className="ui container" style={{ marginTop: "10px" }}>
+      <AppStyle>
+        <HeroBackground images={this.state.images} />
         <SearchBar onSubmit={this.onSearchSubmit} />
         <ImageList images={this.state.images} />
-      </div>
+      </AppStyle>
     );
   }
 }
